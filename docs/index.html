@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>intro-component-with-signup-form</title>
+</head>
+
+<body>
+    <div class=" bgimg h-full w-full bg-red-400">
+        <div class=" flex flex-col lg:flex-row px-10 lg:justify-between">
+            <!-- left part -->
+            <div class=" text-white w-full lg:w-96 py-20 lg:py-52 text-center lg:text-left">
+                <p class=" text-5xl font-bold mb-5">Learn to code by watching others</p>
+                <p class=" text-xl">See how experienced developers solve problems in real-time. Watching scripted
+                    tutorials is great, but
+                    understanding how
+                    developers think is invaluable.
+                </p>
+            </div>
+
+            <!-- right part -->
+            <div class=" my-5 lg:my-20 flex justify-center lg:justify-end">
+                <div>
+                    <p class="fmw text-center text-white py-4 rounded-xl bgtry shadowbottom">Try it free 7 days then
+                        $20/mo.thereafter
+                    </p>
+
+                    <div class="fmw h-auto rounded-lg bg-white mt-7 shadowbottom">
+                        <div class=" py-10 px-4 sm:px-10">
+                            <form action="" id="myform">
+                                <div class="relative">
+                                    <input type="text" name="" id="fname" placeholder="First Name"
+                                        class=" w-full h-12 p-2 border-2 border-gray-200 mt-4 rounded-md focus:border-gray-600 focus:outline-none">
+                                    <img src="./icon-error.svg" alt="" class='hidden right-5 top-7 absolute' id="f_er">
+                                </div>
+                                <p id="fname_err" class=" text-right text-red-600"></p>
+
+                                <div class="relative">
+                                    <input type="text" name="" id="lname" placeholder="Last Name"
+                                        class=" w-full h-12 p-2 border-2 border-gray-200 mt-4 rounded-md focus:border-gray-600 focus:outline-none">
+                                    <img src="./icon-error.svg" alt="" class='hidden right-5 top-7 absolute' id="l_er">
+                                </div>
+                                <p id="lname_err" class=" text-right text-red-600"></p>
+
+                                <div class="relative">
+                                    <input type="email" name="" id="email" placeholder="Email Address"
+                                        class=" w-full h-12 p-2 border-2 border-gray-200 mt-4 rounded-md focus:border-gray-600 focus:outline-none">
+                                    <img src="./icon-error.svg" alt="" class='hidden right-5 top-7 absolute' id="e_er">
+                                </div>
+                                <p id="email_err" class=" text-right text-red-600"></p>
+
+                                <div class="relative">
+                                    <input type="password" name="" id="pass" placeholder="Password"
+                                        pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*?[#?!@$%^&*-]).{8,}"
+                                        class=" w-full h-12 p-2 border-2 border-gray-200 mt-4 rounded-md focus:border-gray-600 focus:outline-none">
+                                    <img src="./icon-error.svg" alt="" class='hidden right-5 top-7 absolute' id="p_er">
+                                </div>
+                                <p id="pass_err" class=" text-right text-red-600"></p> <br>
+                                <input type="checkbox" onclick="Toggle()">
+                                <b>Show Password</b>
+
+                                <input type="submit" onclick=" return validateForm();reset()"
+                                    class=" mt-4 bg-green-500 text-center text-white px-6 py-2 w-full rounded-lg font-bold duration-500  hover:opacity-75"
+                                    value="CLAIM YOUR FREE TRIAL">
+                                <p class=" text-sm text-gray-500 mt-2">By clicking the button, you are agreeing to our
+                                    <span class=" text-red-700">
+                                        Terms and
+                                        Services</span>
+                                </p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+
+</html>

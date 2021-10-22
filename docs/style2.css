@@ -1,0 +1,48 @@
+.bgimg{
+    background-image: url('./bg-intro-desktop.png');
+}
+
+.fmw{
+    width: 500px;
+}
+
+.bgtry{
+    background-color: #5d54a3;
+}
+
+.shadowbottom{
+   box-shadow: 0 8px 6px -6px black;
+}
+
+/* .err_icon {
+    position: relative;
+}
+.err_icon input {
+    padding-left:18px;
+}
+.err_icon:before {
+    position: absolute;
+    top: 0;
+    content:url('./icon-error.svg');
+    right: 5px;
+    
+} */
+.err_img{
+    position: relative;
+}
+.error{
+    position: absolute;
+    right: 25px;
+    display: none;
+    /* top: 12px; */
+    /* transform: translateY(12px); */
+}
+@media screen and (max-width:640px) {
+    .bgimg{
+        background-image: url('./bg-intro-mobile.png');
+    }
+
+    .fmw{
+        width: auto;
+    }
+}
